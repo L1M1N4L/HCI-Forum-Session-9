@@ -1,0 +1,248 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #444;
+}
+
+/* Container Styles */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Upper Section Styles */
+.upper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #4285f4; /* Updated color */
+    color: #fff;
+}
+
+.upper input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+.upper button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e74c3c; /* Updated color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upper button:hover {
+    background-color: #c0392b; /* Updated color on hover */
+}
+
+/* Bottom Section Styles */
+.bottom {
+    display: flex;
+    margin-top: 20px;
+}
+
+.bottom div {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.bottom div img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.bottom div textarea {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Save Button Styles */
+#save, button {
+    padding: 12px 20px; /* Same size for both buttons */
+    border: none;
+    border-radius: 6px;
+    background-color: #e74c3c; /* Updated color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#save:hover, button:hover {
+    background-color: #c0392b; /* Updated color on hover */
+}
+
+/* Tab Styles */
+#tabs {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.ui-widget-header {
+    background: #4285f4; /* Header background color */
+    border: none;
+}
+
+.ui-widget-content {
+    background: #fff; /* Content background color */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.ui-tabs-nav {
+    margin-top: 20px;
+}
+
+.ui-state-default, .ui-state-active, .ui-state-hover {
+    background: #4285f4; /* Tab background color */
+    color: #fff; /* Tab text color */
+    border: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.ui-state-default a, .ui-state-active a, .ui-state-hover a {
+    color: #fff; /* Tab text color */
+}
+
+.ui-state-active {
+    font-weight: bold;
+}
+
+.ui-tabs-panel {
+    display: none;
+}
+
+.ui-tabs-active {
+    display: block;
+}
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the tabs */
+#tabs {
+    width: 80%;
+    margin: 20px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Style the tab content */
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+}
+
+/* Style the OCR tab */
+#ocr-tab {
+    background-color: #ecf0f1;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.upper {
+    margin-bottom: 20px;
+}
+
+input[type="file"], button {
+    margin-right: 10px;
+}
+
+.progress {
+    height: 20px;
+    background-color: #3498db;
+    width: 0;
+    border-radius: 5px;
+}
+
+.bottom {
+    display: flex;
+}
+
+.bottom div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+textarea#textoutput {
+    width: 100%;
+    height: 100px;
+}
+
+/* Style the Text Editor tab */
+#text-editor-tab {
+    background-color: #ecf0f1;
+}
+
+.text-editor {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+textarea#editor {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+/* Style the Save button in the Text Editor tab */
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
