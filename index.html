@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Forum Session 9</title>
+    <link rel="stylesheet" href="ocr_styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#ocr-tab">OCR</a></li>
+            <li><a href="#text-editor-tab">Text Editor</a></li>
+        </ul>
+        <h1>HCI Forum Session 9</h1>
+        <div id="ocr-tab" class="tab-content">
+            <div class="container">
+                <div class="upper">
+                    <input type="file">
+                    <button>Start</button>
+                    <button id="save">Save</button>
+                    <div class="progress"></div>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <img src="">
+                    </div>
+                    <div>
+                        <textarea id="textoutput" placeholder="text"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text-editor-tab" class="tab-content">
+            <div class="text-editor">
+            </head>
+            <body>
+              <textarea id="editor"></textarea>
+              <br>
+              <button onclick="saveFile()">Save</button>
+              <input type="file" id="fileInput" onchange="openFile()">
+              <div id="fileContent"></div>
+
+            </body>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/tesseract.js@v2.0.0-alpha.13/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    
+    <script>
+        $(function() {
+            $("#tabs").tabs();
+        });
+    </script>
+</body>
+</html>
